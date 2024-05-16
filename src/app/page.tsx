@@ -14,11 +14,11 @@ import { Image } from '@chakra-ui/next-js'
 import logo from '@/images/logo/logo.png'
 
 export default function Start (): JSX.Element {
+  const isMobile = useIsMobile()
   const [selectedSection, setSelectedSection] = useState('inicio')
   const [isLoading, setIsLoading] = useState(true)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef(null)
-  const isMobile = useIsMobile()
 
   setTimeout(() => {
     setIsLoading(false)
