@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Box } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 import logo from '@/images/logo/logo.png'
 import { Image } from '@chakra-ui/next-js'
 
@@ -24,6 +24,7 @@ export default function Loading (): JSX.Element {
         transition={{ duration: 1.5, type: 'spring', stiffness: 120 }}
       >
         <Image alt='logo mais valor' src={logo} />
+        <Heading textAlign={'center'}>PAVE EDUCATIONAL SESSION</Heading>
       </motion.div>
     </Box>
   )

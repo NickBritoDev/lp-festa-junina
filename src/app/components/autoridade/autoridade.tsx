@@ -38,7 +38,7 @@ export default function Autoridade (): JSX.Element {
             <Text>
            <strong>Regional Culture:</strong> Dive into the cultural significance of Festa Junina. Discover how this festival reflects the unique blend of European and indigenous influences in Brazilian culture.
             </Text>
-            <Text mt={2} _hover={{ bg: 'red', color: 'white' }} border={'solid 2px red'} p={2} rounded={'lg'} cursor={'pointer'}> <a href="https://www.todamateria.com.br/festas-juninas/" target='_blank' rel="noreferrer">know more</a></Text>
+            <Text mt={2} _hover={{ bg: 'red', color: 'white' }} border={'solid 2px red'} p={2} rounded={'lg'} cursor={'pointer'}> <a href="https://en.wikipedia.org/wiki/Festa_Junina" target='_blank' rel="noreferrer">know more</a></Text>
           </Flex>
         </Flex>
 
