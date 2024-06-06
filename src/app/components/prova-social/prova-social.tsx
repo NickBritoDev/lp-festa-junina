@@ -19,7 +19,7 @@ export default function ProvaSocial (): JSX.Element {
         Discover the Traditional Dance of Festa Junina
         </Heading>
         <Text textAlign={'center'} px={20} color={'white'}>Get ready to dance to the lively rhythms of Festa Junina! The quadrilha, also known as the square dance, is the highlight of this Brazilian celebration. <br /> Here’s what you need to know about this traditional dance</Text>
-        <Button my={4} colorScheme='red'><a href="https://www.youtube.com/watch?v=RQlkdNj1CmY" target='_blank' rel="noreferrer">know more</a></Button>
+        <Button my={4} colorScheme='red'><a href="https://drive.google.com/file/d/1vBuyAigVTIG911pV0DBP_Ml_cbN7rrSj/view?usp=sharing" target='_blank' rel="noreferrer">know more</a></Button>
       </Flex>
 
       <Box boxShadow={isMobile ? '-10px -350px 200px 70px #dd1818' : '10px -10px 200px 50px #dd1818'}></Box>
