@@ -7,12 +7,13 @@ import { GiBrazilFlag, GiMusicalNotes } from 'react-icons/gi'
 
 export default function Autoridade (): JSX.Element {
   const isMobile = useIsMobile()
+
   return (
     <Flex px={isMobile ?? 20} bg={'white'} color={'black'} flexDir={'column'} alignItems={'center'} justifyContent={'center'} w={'100%'} mt={14} p={4} pl={isMobile ? 4 : 20}>
       <Heading size={isMobile ? 'lg' : 'xl'}>Discover the Richness of Festa Junina</Heading>
       <Text fontSize={18} mt={isMobile ? 4 : -10} mb={isMobile ? 10 : 0} p={isMobile ? 0 : 10} textAlign={isMobile ? 'justify' : 'center'}>
-      Come and explore the vibrant traditions of Festa Junina! Learn about the delicious typical foods, lively traditional dances, and the rich cultural heritage of this beloved Brazilian festival.
-</Text>
+        Come and explore the vibrant traditions of Festa Junina! Learn about the delicious typical foods, lively traditional dances, and the rich cultural heritage of this beloved Brazilian festival.
+      </Text>
 
       <Flex flexDir={isMobile ? 'column' : 'row'} w={'100%'} alignItems={'center'} justifyContent={'space-between'} pr={isMobile ? 0 : 40}>
         <Flex mr={isMobile ? 0 : 10} flexDir={isMobile ? 'column' : 'column'} my={8} gap={12} w={'100%'} alignItems={'center'} justifyContent={'center'}>
@@ -28,7 +29,7 @@ export default function Autoridade (): JSX.Element {
           <Flex alignItems={'flex-start'} justifyContent={'center'} flexDir={'column'} >
             <GiMusicalNotes color='#dd1818' size={100} />
             <Text>
-           <strong>Traditional Dance:</strong> Join in the fun and excitement of the quadrilha dance! Learn the steps and history of this popular dance that brings communities together during the festival.
+              <strong>Traditional Dance:</strong> Join in the fun and excitement of the quadrilha dance! Learn the steps and history of this popular dance that brings communities together during the festival.
             </Text>
             <Text mt={2} _hover={{ bg: 'red', color: 'white' }} border={'solid 2px red'} p={2} rounded={'lg'} cursor={'pointer'}> <a href="https://dayanasdaily.com/2021/06/24/festa-junina-a-traditional-brazilian-celebration/" target='_blank' rel="noreferrer">know more</a></Text>
           </Flex>
@@ -36,39 +37,34 @@ export default function Autoridade (): JSX.Element {
           <Flex alignItems={'flex-start'} justifyContent={'center'} flexDir={'column'}>
             <GiBrazilFlag color='#dd1818' size={100} />
             <Text>
-           <strong>Regional Culture:</strong> Dive into the cultural significance of Festa Junina. Discover how this festival reflects the unique blend of European and indigenous influences in Brazilian culture.
+              <strong>Regional Culture:</strong> Dive into the cultural significance of Festa Junina. Discover how this festival reflects the unique blend of European and indigenous influences in Brazilian culture.
             </Text>
             <Text mt={2} _hover={{ bg: 'red', color: 'white' }} border={'solid 2px red'} p={2} rounded={'lg'} cursor={'pointer'}> <a href="https://en.wikipedia.org/wiki/Festa_Junina" target='_blank' rel="noreferrer">know more</a></Text>
           </Flex>
         </Flex>
 
         <Box mr={isMobile ? 0 : -20} w={'100%'}>
-  {isMobile
-    ? (
-      <iframe
-        width="360"
-        height="450"
-        src="https://www.youtube.com/embed/4maxZwutdZg?si=kAxWL8zkc3PAlMwb"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen>
-      </iframe>
-      )
-    : (
-      <iframe
-        width="750"
-        height="450"
-        src="https://www.youtube.com/embed/4maxZwutdZg?si=kAxWL8zkc3PAlMwb"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen>
-      </iframe>
-      )}
-</Box>
+          {isMobile
+            ? (
+
+            <video width="360" height="450" controls autoPlay>
+              <source
+                  src={'https://appbancos.s3.sa-east-1.amazonaws.com/092d99c9-522f-4225-b74e-40b27bac70d4.mp4'}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+              )
+            : (
+            <video width="750" height="450" controls autoPlay>
+              <source
+                  src={'https://appbancos.s3.sa-east-1.amazonaws.com/092d99c9-522f-4225-b74e-40b27bac70d4.mp4'}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+              )}
+        </Box>
 
       </Flex>
 
